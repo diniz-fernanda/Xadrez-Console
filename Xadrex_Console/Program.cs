@@ -1,5 +1,6 @@
-﻿using Xadrex_Console.Tabuleiro;
+﻿using tabuleiro;
 
-Tabuleiro tab = new Tabuleiro(8, 8);
+Tabuleiro tab = new Tabuleiro(8,8);
+
 
 Console.ReadLine ();

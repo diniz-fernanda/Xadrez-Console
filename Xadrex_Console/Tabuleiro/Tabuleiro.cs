@@ -1,22 +1,16 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Xadrex_Console.Tabuleiro
+﻿namespace tabuleiro
 {
     public class Tabuleiro
     {
-        public int Linhas { get; set; }
-        public int Colunas { get; set; }
-        public Peca[,] Pecas;
-        
-        public Tabuleiro (int linhas, int colunas)
+        public int linhas { get; set; }
+        public int colunas { get; set; }
+        private Peca[,] pecas;
+
+        public Tabuleiro(int linhas, int colunas)
         {
-            this.Linhas = linhas;
-            this.Colunas = colunas;
-            Pecas = new Peca [linhas, colunas];
+            this.linhas = linhas;
+            this.colunas = colunas;
+            pecas = new Peca[linhas, colunas];
         }
     }
 }

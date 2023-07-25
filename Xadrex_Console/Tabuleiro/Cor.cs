@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Xadrex_Console.Tabuleiro
+namespace tabuleiro
 {
     public enum Cor
     {

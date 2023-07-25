@@ -1,23 +1,17 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Xadrex_Console.Tabuleiro
+﻿namespace tabuleiro
 {
     public class Peca
     {
-        public Posicao Posicao { get; set; }
-        public Cor Cor { get; protected set; }
-        public int QteMovimentos { get; protected set; }
-        public Tabuleiro Tab { get; protected set; }
+        public Posicao posicao { get; set; }
+        public Cor cor { get; protected set; }
+        public int qteMovimentos { get; protected set; }
+        public Tabuleiro tab { get; protected set; }
         public Peca(Posicao posicao, Cor cor, Tabuleiro tab)
         {
-            this.Posicao = posicao;
-            this.Cor = cor;
-            this.Tab = tab;
-            this.QteMovimentos = 0;
+            this.posicao = posicao;
+            this.cor = cor;
+            this.qteMovimentos = 0;
+            this.tab = tab;
         }
     }
 }
